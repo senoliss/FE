@@ -1,0 +1,12 @@
+.border-example{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+
+    /* border-color:goldenrod;
+    border-style: solid;
+    border-width: 10px; */
+    
+    border: solid 10px goldenrod;
+    border-radius: 110px;
+}

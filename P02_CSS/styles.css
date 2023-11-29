@@ -1,0 +1,108 @@
+h1{
+    color: blue;
+}
+
+/* p{
+    font-weight: bold;
+} */
+.flagGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));/*  auto, auto, auto;*/
+    gap: 10px;
+    padding: 20px;
+}
+.flag-container{
+    border: 2px solid #afafaf;
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px;
+    width: 200px;
+    padding: 10px;
+
+}
+.flag{
+    border: 0px solid;
+    height: 33px;
+    width: 180px;
+}
+.flag1{
+    border: 0px solid;
+    width: 60px;
+    height: 100px;
+    display: inline-block;
+    margin: -2px;
+}
+
+.flag2{
+    border: 0px solid;
+    height: 49.5px;
+    width: 180px;
+}
+.flageris {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flagLogo img.ashoka {
+    max-height: 33px; /* Maximum height for Ashoka Chakra */
+    max-width: auto;
+    object-fit: contain;
+}
+.flagLogo img.albanian {
+    max-width: 180px; /* Maximum width for Albanian Eagle */
+    max-height: 99px; /* Maximum height for Albanian Eagle */
+    object-fit: contain;
+    
+}
+.flagLogo img.liechtenstein {
+    max-width: 180px; /* Maximum width for Albanian Eagle */
+    max-height: 27px; /* Maximum height for Albanian Eagle */
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 13px;
+}
+.flagLogo img.kazachstanian2 {
+    max-width: 40px; /* Maximum width for Albanian Eagle */
+    max-height: 90px; /* Maximum height for Albanian Eagle */
+    object-fit: contain;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+}
+.flagLogo img.kazachstanian{
+    max-width: 180px; /* Maximum width for Albanian Eagle */
+    max-height: 80px; /* Maximum height for Albanian Eagle */
+    object-fit: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    
+}
+.flag-name{
+    font-weight: bold;
+}
+
+#flagItaly1{
+    background-color: #008C45;
+}
+
+#flagItaly2{
+    background-color: #F4F9FF;
+}
+
+#flagItaly3{
+    background-color: #CD212A;
+}
+
+/* .flagLogo img{
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33px;
+    height: 33px;;
+} */

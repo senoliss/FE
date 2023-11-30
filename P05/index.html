@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h2>HTML Forms</h2>
+        <form action="/action_page.php" >
+        <fieldset>
+            <legend>Main User Info</legend>
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Vardenis"/>
+            <br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input type="text" id="lname" name="lname" placeholder="Pavardenis"/>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" name="password"/>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sub User Info</legend>
+            <input type="radio" id="male" name="gender" value="male"/>
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female"/>
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="other" name="gender" value="other"/>
+            <label for="other">Other</label>
+            <br>
+
+
+            <input type="checkbox" id="car1" name="car1" value="BNV"/>
+            <label for="car1">BNV</label>
+            <br>
+            <input type="checkbox" id="car2" name="car2" value="AUTI"/>
+            <label for="car2">AUTI</label>
+            <br>
+            <input type="checkbox" id="car3" name="car3" value="MERKEDES"/>
+            <label for="car3">MERKEDES</label>
+            <br>
+
+            <input type="button" value="Click me!"/>
+            <br>
+
+            <label for="favcolor">Select your favorite color</label>
+            <input type="color" id="favcolor" name="favcolor"/>
+            <br>
+
+            <label for="birthdaytime">Birthday (date and time)</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"/>
+            <br>
+            <label for="birthdaytime">Birthday:</label>
+            <input type="date" id="birthdaytime" name="birthdaytime"/>
+            <br>
+            <label for="birthdaytime">Birthday (month - year):</label>
+            <input type="month" id="birthdaytime" name="birthdaytime"/>
+            <br>
+
+            <label for="email">Input your email:</label>
+            <br>
+            <input type="email" id="email" name="email"/>
+            <br>
+
+            <label for="file">Choose your file:</label>
+            <input type="file" id="file" name="file"/>
+            <br>
+
+            <label for="mynumber">Enter your number</label>
+            <input type="number" id="mynumber" name="mynumber" min="1" max="5" style="width: 40px"/>
+            <br>
+
+            <label for="vol">Volume (0-50)</label>
+            <br>
+            <input type="range" id="vol" name="vol" min="0" max="50"/>
+            <br>
+
+            <label for="gsearch">Search Google</label>
+            <br>
+            <input type="search" id="gsearch" name="gsearch"/>
+            <br>
+
+            <label for="phone">Enter your phone nubmer:</label>
+            <br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{1}-[0-9]{2}-[0-9]{3}"/>
+            <br>
+
+            <label for="cars">Choose a car:</label>
+            <br>
+            <select id="cars" name="cars" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="saab">Saab</option>
+                <option value="bmw">BMW</option>
+                <option value="vw">VW</option>
+            </select>
+            <br>
+
+            <label for="message">Your message</label>
+            <br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br>
+            
+            <button type="button">Click <b>m</b>e!</button>
+            <br>
+
+            <label for="mybrowser">Enter your browser:</label>
+            <br>
+            <input list="browsers" name="mybrowser" id="mybrowser"/>
+            <datalist id="browsers">
+                <option value="Edge"/>
+                <option value="Firefox"/>
+                <option value="Chrome"/>
+                <option value="Safari"/>
+                <option value="Edge"/>
+            </datalist>
+        </fieldset>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    </body>
+</html>

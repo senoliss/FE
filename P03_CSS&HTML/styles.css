@@ -1,14 +1,48 @@
-.border-example{
+/* .border-example{
     width: 200px;
     height: 200px;
     background-color: cornflowerblue;
 
     border-color:goldenrod;
     border-style: solid;
-    border-width: 10px;
-    
-    /* border: solid 10px goldenrod;
-    border-radius: 110px; */
+    border-width: 5px;
     padding: 10px;
+    background-image: url(./IndiaFlagLogo.jpg);
+    background-size: contain;
+}
+
+.border-example span{
+    background-color: rgb(15, 178, 200, 0.7);
+    color:burlywood;
+} */
+
+.first{
+    width: 450px;
+    height: 70px;
+    margin: 20px 0;
+
+    background-image: url(./city.avif);
+    background-size:cover;
+
+    border-radius: 25px;
+}
+.first h1{
     margin: 20px;
+    color:burlywood;
+    font-family:Arial;
+}
+.second{
+    width: 450px;
+    height: 70px;
+    padding: 20px 0;
+
+    background-image: url(./nature.jpg);
+    background-size: cover;
+
+    border-radius: 25px;
+}
+.second h1{
+    margin: 20px;
+    color:burlywood;
+    font-family:Arial;
 }

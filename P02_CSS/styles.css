@@ -63,24 +63,22 @@ h1{
     align-items: center;
     padding: 13px;
 }
-.flagLogo img.kazachstanian2 {
-    max-width: 40px; /* Maximum width for Albanian Eagle */
-    max-height: 90px; /* Maximum height for Albanian Eagle */
-    object-fit: contain;
-    
+.flagLogo.kazachstan {
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
+}
+.flagLogo img.kazachstanian2 {
+    max-width: 100%; /* Maximum width for Kazakhstan koshkar-muiz */
+    max-height: 90px; /* Maximum height for Kazakhstan koshkar-muiz */
+    object-fit: contain;
 }
 .flagLogo img.kazachstanian{
-    max-width: 180px; /* Maximum width for Albanian Eagle */
-    max-height: 80px; /* Maximum height for Albanian Eagle */
+    max-width: 100%; /* Maximum width for Kazakhstan Sun */
+    max-height: 80px; /* Maximum height for Kazakhstan Sun */
     object-fit: contain;
-
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    
+}
+.center-image{
+    margin-left: 30px;
+    margin-top: auto;
 }
 .flag-name{
     font-weight: bold;

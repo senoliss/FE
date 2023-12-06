@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        
+        <h1>Hello HTML DOM</h1> <h2>getElementsByTagName()</h2>
+        <ul>
+            <li class="drink coffee">Coffee</li>
+            <li class="drink tea">
+                Tea
+                <ul>
+                    <li>Black Tea</li>
+                    <li>Green tTa</li>
+                </ul>
+            </li>
+            <li class="drink water">Water</li>
+            <li class="drink milk">Milk</li>
+        </ul>
+        <p>
+        <button onclick="changeLi()">Pakeisti li</button>
+        </p>
+        <p>
+        <button onclick="AddMilk()">Prideti pieno</button>
+        </p>
+        <div>
+            <button onclick=" document.getElementById('element_count').innerHTML = countLi()">Suskaiciuoti gerimus</button>
+            <div>
+                <button onclick="countDrinks()">Suskaiciuoti gerimus per scripta</button>
+            </div>
+            <div id="element_count">
+                not counted
+            </div>
+        </div>
+
+        <!-- -------------------- -->
+        
+        <p>
+            <button onclick="changeAllMilkToAlmond()">Pakeisti piena i almond gerima</button>
+        </p>
+
+            
+        <!-- -------------------- -->
+
+        <p>
+            <button onclick="changeWaterBgColorToBlue()">Pakeisti vandens fono spalva</button>
+        </p>
+    
+        <!-- -------------------- -->
+
+        <p>
+            <button onclick="changeWaterClassAndColor()">Pakeisti vandens fono spalva</button>
+        </p>
+
+        <!-- -------------------- -->
+
+        <p>
+            <button onclick="changeWaterClassColorRandom()">Pakeisti vandens fono spalva i random</button>
+        </p>
+
+        <p>
+        <input type="reset" value="Reset"/>
+        </p>
+
+        <br><br><br><br><br>
+
+
+        <script src="./script.js" async defer></script>
+    </body>
+</html>

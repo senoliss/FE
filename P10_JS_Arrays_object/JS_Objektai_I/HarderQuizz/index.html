@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+Pratimas: Interaktyvi viktorina
+Tikslas: Sukurkite paprastą interaktyvią viktoriną naudodami „JavaScript“, HTML ir CSS. 
+
+Reikalavimai: 
+- HTML struktūra: pagrindinė HTML struktūra su pavadinimu, 
+  klausimų serija (kiekvienas su keliais atsakymų variantais) ir pateikimo mygtuku .
+- naudokite DOM selektorius, kad patvirtinti atsakymus ir rodyti rezultatus.
+- CSS stilius: elementus reikiai truputi stilizuoti, kad atrodytu gražiai.
+- Padarykite bent 3 klausimus turinčią viktoriną. Kiekvienas klausimas turi turėti bent 3 atsakymų variantus.
+- Klausimai turi būti pridedami dinamiškai (naudojant JavaScript), o ne įhardkodinti html'e.
+- Kai vartotojas paspaudžia pateikimo mygtuką, turi būti rodomas rezultatas kiek klausimų atsakyta teisingai.
+- Atsitiktinai sumaišykite klausimų tvarką.
+- Atsitiktinai sumaišykite atsakymus kiekviename klausime.
+- Kiekvienas atsakymas turi turėti klasę, kuri nurodo ar atsakymas teisingas (choice-correct) ar ne (choice-incorrect).
+
+Papildomi iššūkiai:
+- Įdiekite funkciją, kad po pateikimo teisingų atsakymų foną padarytumėte žaliu, o neteisingų - raudonu.
+- Įdiekite funkciją, kad vartotojas galėtų pabandyti dar kartą (paspaudęs reset mygtuką). Page refresh netinka.
+- Jeigu kažkurio klausimo atsakymas nepasirinktas - rodyti pranešimą, "reikia atsakyti į visus klausimus".
+
+ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <div class="questions">
+
+        </div>
+
+        <div>
+            <button id="submit" onclick="submit()">Pateikti</button>
+            <button onClick="window.location.reload();">Refresh Page</button>
+            <!-- Add Reset button there -->
+        </div>
+
+        <div id="result" class="result">
+            <!-- show result here -->
+        </div>
+    </div>
+
+    <script src="./quiz2.js" async defer></script>
+</body>
+
+</html>

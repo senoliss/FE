@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .race-track {
+    position: relative;
+    width: 80vw;
+    height: 200px;
+    border: 1px solid #333;
+    overflow: hidden;
+  }
+
+  .turtle {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    border-radius: 30%;
+    margin: 15 15 15 15px;
+  }
+
+  .turtle-red { background-color: red; }
+  .turtle-blue { background-color: blue; }
+  .turtle-green { background-color: green; }
+  .turtle-yellow { background-color: yellow; }
+  .turtle-purple { background-color: purple; }
+  .turtle-orange { background-color: orange; }
+  .turtle-pink { background-color: pink; }

@@ -28,9 +28,14 @@ function countDrinks(){
 
 function changeAllMilkToAlmond(){
     const list_of_milk_li = document.getElementsByClassName('milk');
+
     for(let milk_li of list_of_milk_li)
     {
-        milk_li.innerHTML = 'Almond Drink';
+        if(milk_li.innerHTML === 'Almond Drink')
+        {
+            milk_li.innerHTML = 'Milk';
+        }
+        else{milk_li.innerHTML = 'Almond Drink';}
     }
 }
 
@@ -63,3 +68,4 @@ function changeWaterClassColorRandom() {
         water_li.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     }
 }
+document.querySelector('li.tea #wrongText').textContent = "Green Chai";

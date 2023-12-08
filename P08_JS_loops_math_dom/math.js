@@ -1,10 +1,13 @@
 let pi = Math.PI;
 console.log(pi);
-let roundedPi = pi.toFixed(2);
+let roundedPi = Math.round(pi);
 console.log(roundedPi);
-
-let roundedPi2 = Math.round(pi);
-console.log(roundedPi2);
+let roundedPiToFixed = pi.toFixed(2);
+console.log(roundedPiToFixed);
+let floorValueMath = Math.floor(2.8);
+console.log(floorValueMath);
+let ceilValueMath = Math.ceil(2.5);
+console.log(ceilValueMath);
 
 // parasyti funkciaj kuri imituotu sesiasienio kauliuko metima
 // kauliuka mesti kol iskris 3

@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.center-container {
+    text-align: center;
+    position: relative;
+  }
+
+#numberForm {
+  display: inline-block;
+  text-align: left;
+}
+
+#number,
+#errorMessage {
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#errorMessage {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+  }

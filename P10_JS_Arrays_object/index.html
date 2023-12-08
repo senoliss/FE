@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+Pratimas: Interaktyvi viktorina
+Tikslas: Sukurkite paprastą interaktyvią viktoriną naudodami „JavaScript“, HTML ir CSS. 
+
+Reikalavimai: 
+- HTML struktūra: pagrindinė HTML struktūra su pavadinimu, 
+  klausimų serija (kiekvienas su keliais atsakymų variantais) ir pateikimo mygtuku .
+- naudokite DOM selektorius, kad patvirtinti atsakymus ir rodyti rezultatus.
+- CSS stilius: elementus reikiai truputi stilizuoti, kad atrodytu gražiai.
+- Padarykite bent 3 klausimus turinčią viktoriną. Kiekvienas klausimas turi turėti bent 3 atsakymų variantus.
+- Kai vartotojas paspaudžia pateikimo mygtuką, turi būti rodomas rezultatas kiek klausimų atsakyta teisingai.
+- Jeigu kažkurio klausimo atsakymas nepasirinktas - rodyti pranešimą, "reikia atsakyti į visus klausimus".
+
+Papildomi iššūkiai:
+- Įdiekite funkciją, kad po pateikimo teisingų atsakymų foną padarytumėte žaliu, o neteisingų - raudonu.
+- Įdiekite funkciją, kad vartotojas galėtų pabandyti dar kartą (paspaudęs reset mygtuką).
+- Atsitiktinai sumaišykite atsakymus kiekviename klausime.
+
+ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Viktorina</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <div class="question" id="question1">
+            <p>What is the capital of France?</p>
+            <div class="choices">
+                <input type="radio" name="q1" value="Paris" id="q1a" class="choice choice-correct" required/>Paris
+                <br>
+                <input type="radio" name="q1" value="London" id="q1b" class="choice choice-incorrect" />London
+                <br>
+                <input type="radio" name="q1" value="Tallinn" id="q1c" class="choice choice-incorrect" />Tallinn
+                <br>
+                <!-- Add More options here -->
+            </div>
+
+        </div>
+        <div class="question" id="question2">
+            <p>What is AC/DC</p>
+            <div class="choices">
+                <input type="radio" name="q2" value="Car-type" id="q2a" class="choice choice-incorrect" />Car type
+                <br>
+                <input type="radio" name="q2" value="Music-band" id="q2b" class="choice choice-correct" />Music band
+                <br>
+                <input type="radio" name="q2" value="Shoe-brand" id="q2c" class="choice choice-incorrect" />Shoe brand
+                <br>
+                <!-- Add More options here -->
+            </div>
+
+        </div>
+        <div class="question" id="question3">
+            <p>Who invented light bulb?</p>
+            <div class="choices">
+                <input type="radio" name="q3" value="Albert-Einstein" id="q3a" class="choice choice-incorrect"/>Albert Einstein
+                <br>
+                <input type="radio" name="q3" value="Avitela" id="q3b" class="choice choice-incorrect" />Avitela
+                <br>
+                <input type="radio" name="q3" value="Thomas-Edison" id="q3c" class="choice choice-correct" />Thomas Edison
+                <br>
+                <!-- Add More options here -->
+            </div>
+
+        </div>
+        <div>
+            <button id="submit" onclick="submit()">Pateikti</button>
+            <button onClick="window.location.reload();">Refresh Page</button>
+            <!-- Add Reset button there -->
+        </div>
+
+        <div id="result" class="result">
+            <!-- show result here -->
+        </div>
+    </div>
+    <script src="./quiz.js" async defer></script>
+</body>
+
+</html>

@@ -14,7 +14,7 @@ window.onload = function () {
     })
     .catch(error =>{
         console.log("My error ==> ", error);
-    })
+    });
 };
 
 populatePhotos = (obj) => {
